@@ -1,0 +1,1 @@
+# azure-federated-deploy-starter
