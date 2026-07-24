@@ -13,7 +13,11 @@ on:
     branches:
       - main
   workflow_dispatch:
-
+# The job requests its own identity token to sign in to Azure over OIDC,
+# and keeps read access to the repository so checkout continues to work.
+permissions:
+  id-token: write
+  contents: read
 env:
   AZURE_WEBAPP_NAME: "<your-app-name>"
 
