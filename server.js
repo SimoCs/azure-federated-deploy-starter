@@ -1,6 +1,5 @@
-// Contoso shipment tracker: the sample application the federated workflow
-// deploys.
-//
+// Shipment tracker: the sample application the federated workflow
+// 
 // Lab contract: this code is correct and never changes during the lab. It is
 // deliberately zero-dependency (Node core modules only), so the workflow has
 // no install or build step to fail. Two routes matter to the lab's
@@ -31,7 +30,7 @@ const server = http.createServer((req, res) => {
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Contoso Shipment Tracker</title>
+  <title>Shipment Tracker</title>
   <style>
     body { font-family: 'Segoe UI', Arial, sans-serif; background: #f4f4f7; margin: 0; }
     main { max-width: 640px; margin: 8vh auto; background: #ffffff; border-radius: 12px;
@@ -43,7 +42,7 @@ const server = http.createServer((req, res) => {
 </head>
 <body>
   <main>
-    <h1>Contoso Shipment Tracker</h1>
+    <h1>Shipment Tracker</h1>
     <p>Deployed by GitHub Actions with federated identity. No client secret was stored anywhere to put this page here.</p>
     <p>Application <code>${pkg.name}</code>, version <code>${pkg.version}</code>. The version endpoint is at <code>/version</code>.</p>
   </main>
@@ -54,5 +53,5 @@ const server = http.createServer((req, res) => {
 });
 
 server.listen(port, () => {
-  console.log(`Contoso shipment tracker listening on port ${port}`);
+  console.log(`shipment tracker listening on port ${port}`);
 });
