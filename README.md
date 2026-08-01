@@ -4,7 +4,7 @@ Starter repository for the Pluralsight hands-on lab **Deploy an Azure App with G
 
 ## What is in here
 
-- `server.js`, `package.json`: the Contoso shipment tracker, a zero-dependency Node app the workflow deploys to Azure App Service. Its `/version` endpoint returns the deployed application version.
+- `server.js`, `package.json`: the shipment tracker, a zero-dependency Node app the workflow deploys to Azure App Service. Its `/version` endpoint returns the deployed application version.
 - `.github/workflows/deploy.yml`: the deployment workflow, shipped incomplete on purpose. Two marked sections (the Azure sign-in step and the deploy step) and an `AZURE_WEBAPP_NAME` placeholder are completed during the lab, and the lab walks you through running and troubleshooting the workflow.
 
 ## What the lab has you configure in your fork
